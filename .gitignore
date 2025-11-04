@@ -1,0 +1,22 @@
+# MT5 compiled files
+*.ex5
+
+# MetaEditor backup files
+*.bak
+
+# Log files
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Temporary files
+*.tmp
