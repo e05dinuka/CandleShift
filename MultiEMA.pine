@@ -1,0 +1,12 @@
+//@version=5
+indicator("Multi EMA Lines", overlay=true)
+
+// User inputs
+emaCount = input.int(5, "Number of EMA Lines", minval=1, maxval=100)
+lowerPeriod = input.int(3, "Lower Period", minval=1)
+
+// Generate and plot EMAs
+for i = 0 to emaCount - 1
+    period = lowerPeriod + i
+    emaValue = ta.ema(close, period)
+    plot(emaValue, title="EMA " + str.tostring(period), linewidth=1)
